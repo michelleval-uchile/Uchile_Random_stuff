@@ -1,0 +1,34 @@
+@base <https://raw.githubusercontent.com/michelleval-uchile/Uchile_Random_stuff/master/foaf.ttl.txt> .
+
+@prefix mv: <https://raw.githubusercontent.com/michelleval-uchile/Uchile_Random_stuff/master/michelle_foaf_profile.ttl.txt#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix social: <http://users.dcc.uchile.cl/~ahogan/social.ttl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+
+<> a foaf:Document ;
+   dc:date "2021-11-01"^^xsd:date ;
+   dc:title "Chela's FOAF Profile"@en ;
+   foaf:primaryTopic <#mv> ;
+   dc:creator <#mv> .
+
+<#mv> a foaf:Person ;
+   rdfs:label "Michelle Valenzuela" ;
+   rdfs:comment "Just regular student of the DIE (and DCC, sometimes)"@en , "Solo un alumno regular del DIE y del DCC a veces "@es ;
+   foaf:name "Michelle Valenzuela" ;
+   foaf:givenName "Michelle" ;
+   foaf:familyName "Valenzuela" ;
+   foaf:nickname "Chela";
+   foaf:age 22 ; 
+   foaf:img <https://raw.githubusercontent.com/michelleval-uchile/Uchile_Random_stuff/master/Shimba.jpg> ; 
+   foaf:knows <https://users.dcc.uchile.cl/~dhernand/foaf.ttl#dh> , <http://anakena.dcc.uchile.cl/~jasalas/web/foaf.ttl#me>, <http://anakena.dcc.uchile.cl/~rstapia/sofifoaf/foaf.ttl#sb>, <http://anakena.dcc.uchile.cl/~rstapia/foaf.ttl#rt>, <https://users.dcc.uchile.cl/~paliaga/foaf.ttl#pa> ;
+   foaf:interest dbr:Semantic_Web , dbr:Cat , dbr:Chocolate_chip_cookie , dbr:Animal_Crossing, dbr:Kuchen, <http://dbpedia.org/resource/Hunter_×_Hunter> ; 
+   social:hasEnemy <http://users.dcc.uchile.cl/~ahogan/abot.ttl#ab> ; 
+   social:likesMovie dbr:White_Chicks , dbr:Indiana_Jones, dbr:Fantastic_Beasts_and_Where_to_Find_Them, <https://dbpedia.org/page/Doctor_Strange_(2016_film)> ;
+   social:hasSpiritAnimal dbr:Fox ;
+   social:hasFavouritePlatonicSolid dbr:Icosahedron ;
+   foaf:myersBriggs "ENTP" .
